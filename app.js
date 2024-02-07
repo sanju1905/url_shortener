@@ -11,8 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 mongoose
-  .connect('mongodb://localhost:27017', {
-    dbName: 'url-shortner',
+  .connect('mongodb+srv://sanjay:sanjay@cluster0.fjcbkym.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
